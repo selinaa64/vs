@@ -13,8 +13,8 @@ public class ServiceTodoItem {
 
 
     public List<TodoItem> getTodoItems() {
-        todoItems.add(item1);
-        todoItems.add(item2);
+       // todoItems.add(item1);
+       // todoItems.add(item2);
         return todoItems;
     }
     public TodoItem getTodoItemById(Integer id) {
@@ -34,5 +34,10 @@ public class ServiceTodoItem {
            }
        }
    }
+
+   public void deleteTodoItem(Integer id){
+       TodoItem searchedItem = todoItems.stream().filter(item ->item.id.equals(id)).findFirst().orElse(null);
+       todoItems.remove(searchedItem);
+    }
 
 }

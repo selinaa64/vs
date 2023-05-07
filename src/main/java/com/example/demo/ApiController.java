@@ -46,4 +46,8 @@ public class ApiController {
         service.updateTodoItem(id, todoItem);
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteTodoItem(@PathVariable Integer id){
+        service.deleteTodoItem(id);
+    }
 }
