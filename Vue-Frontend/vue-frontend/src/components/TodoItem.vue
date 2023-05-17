@@ -15,9 +15,8 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-
-    
+        <button variant="primary">Add TodoItem</button>
+    </div> 
 </template>
 
 <script>
