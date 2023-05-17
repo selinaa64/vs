@@ -12,6 +12,7 @@ import java.util.List;
 @SpringBootApplication
 @RestController
 @RequestMapping(value = "/todo")
+@CrossOrigin(origins = "http://localhost:8081") // Erlaubt Anfragen von http://localhost:8081
 public class ApiController {
 
     //autowired sonst nullpointerexception

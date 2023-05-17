@@ -14,8 +14,8 @@ public class ServiceTodoItem {
 
 
     public List<TodoItem> getTodoItems() {
-       // todoItems.add(item1);
-       // todoItems.add(item2);
+        todoItems.add(item1);
+        todoItems.add(item2);
         return todoItems;
     }
     public TodoItem getTodoItemById(Integer id) {
