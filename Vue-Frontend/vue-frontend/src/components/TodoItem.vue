@@ -15,13 +15,12 @@
                 </tr>
             </tbody>
         </table>
-        <button variant="primary">Add TodoItem</button>
+        <button class="btn btn-primary">Add TodoItem</button>
     </div> 
 </template>
 
 <script>
 import ServiceTodoItem from '@/services/ServiceTodoItem';
-
 export default {
     name: "TodoItem", 
     data(){
@@ -35,7 +34,7 @@ export default {
                 console.log(response)
                 this.todoItems = response.data; 
               });
-        }
+            }
     }, 
     created() {
         this.getTodoItems()

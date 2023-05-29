@@ -1,19 +1,14 @@
 <template>
   <div id="app">
- <TodoItem /> 
- <HelloWorld/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TodoItem from './components/TodoItem.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    TodoItem
-  }
+  }  
 }
 </script>
 
